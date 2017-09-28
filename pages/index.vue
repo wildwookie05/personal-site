@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import OctahedronSpin from '~components/OctahedronSpin.vue'
+import OctahedronSpin from './../components/OctahedronSpin.vue'
 
 export default {
   components: {
