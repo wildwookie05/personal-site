@@ -1,27 +1,27 @@
 <template>
   <section class="container">
     <div>
-      <Octahedron/>
+      <OctahedronSpin/>
       <h1 class="title">
-        R MICHELS
+        RICHARD MICHELS
       </h1>
       <h2 class="subtitle">
         developer
       </h2>
-     <!--  <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div> -->
+      <div class="links">
+        <a href="/about" class="link">About</a>
+        <!-- <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a> -->
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-import Octahedron from '~components/Octahedron.vue'
+import OctahedronSpin from '~components/OctahedronSpin.vue'
 
 export default {
   components: {
-    Octahedron
+    OctahedronSpin
   }
 }
 </script>
@@ -40,14 +40,14 @@ export default {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size:75px;
   color: #35495e;
   letter-spacing: 1px;
 }
 .subtitle
 {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 35px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
@@ -55,5 +55,14 @@ export default {
 .links
 {
   padding-top: 15px;
+}
+.link{
+  color: #35495e;
+}
+.octahedron
+{
+  position:absolute;
+  top:-100px;
+  left:-100px;
 }
 </style>
