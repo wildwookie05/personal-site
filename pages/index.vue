@@ -57,6 +57,7 @@ export default {
   padding-top: 15px;
 }
 .link{
+  transform: translateX(-50%);
   color: #35495e;
 }
 .octahedron
