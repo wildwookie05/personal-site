@@ -1,69 +1,81 @@
 <template>
-  <section class="container">
-    <div>
-      <OctahedronSpin/>
-      <h1 class="title">
-        RICHARD MICHELS
-      </h1>
-      <h2 class="subtitle">
-        developer
-      </h2>
-      <div class="links">
-        <a href="/about" class="link">About</a>
-        <!-- <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a> -->
+  <section>
+    <div class="container-head">
+      <img src="https://i.imgur.com/RWYP45f.png" class="profile">
+      <div class="nav">
+        <div class="nav-menu">
+          one | two | three
+        </div>
+      </div>
+    </div>
+    <div class="container-body">
+      <div class="menu">
+      </div>
+      <div class="body">
+        <div style="border-bottom:1px solid; height:33px;width:90%;">
+          <h2 class="title">
+            About
+          </h2>
+        </div>
       </div>
     </div>
   </section>
 </template>
-
-<script>
-import OctahedronSpin from './../components/OctahedronSpin.vue'
-
-export default {
-  components: {
-    OctahedronSpin
-  }
-}
-</script>
-
 <style>
-.container
-{
-  min-height: 100vh;
+.container-head{
   display: flex;
+  width:100%;
+  height:auto;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-.title
-{
+.container-body{
+  display: flex;
+  width:100%;
+  height:100%;
+  justify-content: center;
+}
+.menu{
+  width:20%;
+  height:100px;
+}
+.body{
+  display:flex;
+  justify-content: center;
+  width:55%;
+  height:100px;
+}
+.nav{
+  display:flex;
+  justify-content: center;
+  width:55%;
+  height:auto;
+  text-align:right;
+}
+.nav-menu{
+  width:90%;
+  position:relative;
+  top:50%;
+  transform: translateY(-18px);
+}
+.title{
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
-  font-weight: 300;
-  font-size:75px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-weight: 200;
+  font-size:30px;
+  letter-spacing: 5px;
 }
-.subtitle
-{
-  font-weight: 300;
-  font-size: 35px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+
+.grey{ 
+  background-color:gray;
 }
-.links
-{
-  padding-top: 15px;
+.blue{
+  background-color:blue;
 }
-.link{
-  transform: translateX(-50%);
-  color: #35495e;
+.red{
+  background-color:red;
 }
-.octahedron
-{
-  position:absolute;
-  top:-100px;
-  left:-100px;
+.profile{
+  width:20%;
+  height:20%;
 }
 </style>
