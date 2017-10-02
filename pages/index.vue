@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <div class="container-body">
+  <section class="all-content">
+    <div class="container-body font-gill">
       <div class="body">
         <h1 class="header">
           RICHARD MICHELS
@@ -11,7 +11,7 @@
       </div>
     </div>
     </br>
-    <div class="container-body">
+    <div class="container-body font-gill">
       <div class="body">
         <div class="profile-about">
           <img src="/15_by_15 orthogonal maze.svg" alt="maze" class="profile resize"/>
@@ -20,7 +20,19 @@
               About
             </h2>
             <div class="content">
-              Squid fixie live-edge, quinoa banh mi echo park 8-bit bespoke selfies chartreuse asymmetrical pug. Poutine jianbing leggings wolf snackwave, synth man bun swag. Intelligentsia meh fanny pack keffiyeh truffaut, austin kickstarter pop-up fashion axe typewriter retro narwhal coloring book vegan. Listicle PBR&B twee mixtape vegan kitsch gastropub vaporware asymmetrical venmo jean shorts authentic bespoke prism. Farm-to-table mustache stumptown gochujang.
+              I am a relative newcomer to software development who has 
+attained a position in the field driven by my passion 
+for technology. My journey has taken me from earning a BA 
+in Film to working at Yellowstone National Park, to delivering 
+coffee in Manhattan, to attending Fullstack Academy of Code in NYC
+and eventually being hired as a full time developer. In my current 
+position I work autonomously and independently
+across the stack supporting existing application deployments 
+and implementing new custom features. I am currently looking to 
+join and learn from a strong core of diverse engineers. 
+I believe the next step in my journey is to gain as much knowledge 
+as possible from an experienced mentor and offer my own dedicated
+work ethic. 
             </div>
           </div>
         </div>
@@ -57,9 +69,14 @@
   </section>
 </template>
 <style>
+
+.all-content{
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
 .header{ 
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  font-weight: 100;
+  font-weight: 500;
   letter-spacing: 5px;
   font-size:50px;
   text-align:justify;
@@ -96,7 +113,6 @@
   transform: translateY(-18px);
 }
 .title{
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 200;
   font-size:30px;
@@ -128,13 +144,51 @@
   background-color: gray;
 }
 .about{
-  width:60%;
+  width:70%;
 }
 .italic{
   font-style: italic;
 }
 img.resize{
-  max-width: 13em;
-  max-height: 13em;
+  align-self: center;
+}
+.font-gill{
+  font-family: Gill Sans Extrabold, sans-serif;  
+}
+
+@media (max-width:1600px){
+  .about{
+    width:60%;
+  }
+}
+
+@media (max-width:1400px){
+  .about{
+    width:50%;
+  }
+}
+
+@media (max-width:1200px){
+  .about{
+    width:40%;
+  }
+}
+
+@media (max-width:1000px){
+  .about{
+    width:30%;
+  }
+}
+
+@media (max-width:768px){
+  .profile-about{
+    flex-direction:column
+  }
+  .about{
+    width:100%;
+  }
+  .body{
+    width:70%;
+  }
 }
 </style>

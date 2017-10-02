@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <OctahedronSpin/>
+     <OctahedronSpin/>
       <h1 class="title">
         RICHARD MICHELS
       </h1>
@@ -24,6 +24,7 @@ export default {
     OctahedronSpin
   }
 }
+
 </script>
 
 <style>
