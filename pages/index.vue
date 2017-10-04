@@ -14,25 +14,18 @@
     <div class="container-body font-gill">
       <div class="body">
         <div class="profile-about">
-          <img src="/15_by_15 orthogonal maze.svg" alt="maze" class="profile resize"/>
+        <div class="outsideWrapper">
+          <div class="insideWrapper">
+            <img src="/15_by_15 orthogonal maze.svg" alt="maze" class="profile resize"/>
+            <canvas id="mazeCanvas"></canvas>
+          </div>
+        </div>
           <div class="about">   
-            <h2 class="title">
+            <h2 class="title mobile-margin-top">
               About
             </h2>
             <div class="content">
-              I am a relative newcomer to software development who has 
-attained a position in the field driven by my passion 
-for technology. My journey has taken me from earning a BA 
-in Film to working at Yellowstone National Park, to delivering 
-coffee in Manhattan, to attending Fullstack Academy of Code in NYC
-and eventually being hired as a full time developer. In my current 
-position I work autonomously and independently
-across the stack supporting existing application deployments 
-and implementing new custom features. I am currently looking to 
-join and learn from a strong core of diverse engineers. 
-I believe the next step in my journey is to gain as much knowledge 
-as possible from an experienced mentor and offer my own dedicated
-work ethic. 
+            Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
             </div>
           </div>
         </div>
@@ -63,18 +56,42 @@ work ethic.
               Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
             </li>
           </ul>
+          </br>
+          </br>
+          </br>
+          <h3 class="title">
+            Story
+          </h3>
+          <div class="content">
+                        I am a relative newcomer to software development who has 
+attained a position in the field driven by my passion 
+for technology. My journey has taken me from earning a BA 
+in Film to working at Yellowstone National Park, to delivering 
+coffee in Manhattan, to attending Fullstack Academy of Code in NYC
+and eventually being hired as a full time developer. In my current 
+position I work autonomously and independently
+across the stack supporting existing application deployments 
+and implementing new custom features. I am currently looking to 
+join and learn from a strong core of diverse engineers. 
+I believe the next step in my journey is to gain as much knowledge 
+as possible from an experienced mentor and offer my own dedicated
+work ethic. 
+          </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
 <style>
+#mazeCanvas{
+  position:absolute;
+}
 
 .all-content{
   margin-top:2em;
   margin-bottom:2em;
 }
-
 .header{ 
   font-weight: 500;
   letter-spacing: 5px;
@@ -189,6 +206,9 @@ img.resize{
   }
   .body{
     width:70%;
+  }
+  .mobile-margin-top{
+    margin-top: 1em;
   }
 }
 </style>
