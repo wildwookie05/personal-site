@@ -1,15 +1,16 @@
 <template>
   <section class="all-content">
-    <div class="container-body font-gill header-body">
+    <div class="container-body font-gill">
       <div class="body">
         <h1 class="header">
           RICHARD MICHELS
         </h1>
-        <p>
-          Software Developer
+        <p class="italic">
+          Software developer
         </p>
       </div>
     </div>
+    </br>
     <div class="container-body font-gill">
       <div class="body">
         <div class="profile-about">
@@ -24,23 +25,20 @@
               About
             </h2>
             <div class="content">
-            I'm the lead software developer at Blue Corner Solutions.
-I work on developing, testing and maintaining custom software
-implementations for each of our clients. I am a graduate of 
-Fullstack Academy of Code in New York City, currently residing
-in Brooklyn.
-</br>
- View a PDF version of my résumé <a href="#">here.</a>
+            Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
             </div>
           </div>
         </div>
+        </br>
+        </br>
+        </br>
         <div>
-          <h3 class="title margin-top">
+          <h3 class="title">
             Experience
           </h3>
           </br>
           <h4>
-            Blue Corner Solutions (2016 - Present)
+            Blue Corner Solutions (2016-now)
           </h4>
           </br>
           <p class="italic">
@@ -58,8 +56,11 @@ in Brooklyn.
               Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
             </li>
           </ul>
-          <h3 class="title margin-top">
-           My Story
+          </br>
+          </br>
+          </br>
+          <h3 class="title">
+            Story
           </h3>
           <div class="content">
                         I am a relative newcomer to software development who has 
@@ -103,9 +104,6 @@ work ethic.
   width:100%;
   height:100%;
   justify-content: center;
-}
-.header-body{
-  margin-bottom:3em;
 }
 .body{
   display:flex;
@@ -173,9 +171,6 @@ img.resize{
 }
 .font-gill{
   font-family: Gill Sans Extrabold, sans-serif;  
-}
-.margin-top{
-  margin-top:1em;
 }
 
 @media (max-width:1600px){
