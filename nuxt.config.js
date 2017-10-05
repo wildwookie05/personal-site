@@ -12,7 +12,7 @@ module.exports = {
         }, {
             hid: 'description',
             name: 'description',
-            content: 'Nuxt.js project'
+            content: 'Software developer'
         }],
         link: [{
             rel: 'icon',
